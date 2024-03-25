@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+	<bean class="com.qspiders.springcore.entity.Company2"
+		name="campany1">
+		<property name="id" value="1" />
+		<property name="name" value="Tata" />
+		<property name="loc" value="Pune" />
+	</bean>
+
+	<bean class="com.qspiders.springcore.entity.Employee2"
+		name="employee1">
+		<property name="id" value="1" />
+		<property name="name" value="Arti" />
+		<property name="email" value="arti@gmail.com" />
+		<property name="company2" ref="campany1" />
+	</bean>
+	<bean class="com.qspiders.springcore.entity.Employee2"
+		name="employee2">
+		<property name="id" value="2" />
+		<property name="name" value="Pallavi" />
+		<property name="email" value="pallavi@gmail.com" />
+		<property name="company2" ref="campany1" />
+	</bean>
+	<bean class="com.qspiders.springcore.entity.Company2"
+		name="campany2">
+		<property name="id" value="2" />
+		<property name="name" value="TCS" />
+		<property name="loc" value="Mumbai" />
+	</bean>
+
+	<bean class="com.qspiders.springcore.entity.Employee2"
+		name="employee3">
+		<property name="id" value="3" />
+		<property name="name" value="Sakshi" />
+		<property name="email" value="sakshi@gmail.com" />
+		<property name="company2" ref="campany2" />
+	</bean>
+	<bean class="com.qspiders.springcore.entity.Employee2"
+		name="employee4">
+		<property name="id" value="4" />
+		<property name="name" value="Jayashri" />
+		<property name="email" value="jayashri@gmail.com" />
+		<property name="company2" ref="campany2" />
+	</bean>
+</beans>
