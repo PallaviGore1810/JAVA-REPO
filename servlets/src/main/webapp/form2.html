@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+table{
+	border:"1px solid" ;
+}
+
+</style>
+</head>
+<body>
+	<fieldset align="center">
+		<legend>Employee Registration Form</legend>
+		<table align="center">
+			<form action="emp_reg">
+				<tr>
+					<td><label for="ename">ENAME: </label></td>
+					<td><input type="text" name="ename" id="ename"></td>
+				</tr>
+				<tr>
+					<td><label for="mail1">EMAIL: </label></td>
+					<td><input type="email" name="email" id="mail1"></td>
+				</tr>
+				<tr>
+					<td><label for="">EDEPT: </label></td>
+					<td><select name="select1" id="">
+							<option value="" disabled selected>Select Department</option>
+							<option value="">Computer Science</option>
+							<option value="">Electronics</option>
+							<option value="">Mechanical</option>
+							<option value="">Telecommunication</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td><label for="eadd">EADDRESS: </label></td>
+					<td><textarea name="address" id="eadd" cols="30" rows="5"></textarea></td>
+				</tr>
+				<tr>
+					<td><input type="submit" value="SUBMIT" name="submit"></td>
+					<td><input type="reset" value="RESET" name="reset"></td>
+				</tr>
+			</form>
+		</table>
+	</fieldset>
+</body>
+</html>
