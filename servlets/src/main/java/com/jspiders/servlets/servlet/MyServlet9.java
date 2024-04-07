@@ -39,7 +39,7 @@ public class MyServlet9 implements Servlet {
 
 	@Override
 	public void init(ServletConfig arg0) throws ServletException {
-		System.out.println("Intialization");
+		System.out.println("Intialization"); 
 
 	}
 

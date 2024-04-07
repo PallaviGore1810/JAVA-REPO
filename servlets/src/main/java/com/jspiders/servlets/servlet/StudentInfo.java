@@ -21,7 +21,7 @@ public class StudentInfo extends HttpServlet {
 		String email = req.getParameter("email");
 		long mobile = Long.parseLong(req.getParameter("mobile"));
 		int age = Integer.parseInt(req.getParameter("age"));
-		String[] gender = req.getParameterValues("gender");
+//		String[] gender = req.getParameterValues("gender");
 		String[] courses = req.getParameterValues("course");
 
 //		for (int i=0;i<courses.length;i++) {
@@ -31,7 +31,7 @@ public class StudentInfo extends HttpServlet {
 		resp.setContentType("text/html");
 		PrintWriter writer = resp.getWriter();
 		writer.println("<p>Id :" + id + "<br>" + "Name :" + name + "<br>" + "Email :" + email + "<br>" + "Mobile :"
-				+ mobile + "<br>" + "Age :" + age + "<br>" + "Gender :" + gender + "<br>" + "Courses :" + courses
+				+ mobile + "<br>" + "Age :" + age +  "<br>" + "Courses :" + courses
 				+ "<br>" + "</p>");
 	}
 }
